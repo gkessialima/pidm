@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Text, View } from 'react-native'
+import { estilo } from './Style';
 
 export class Resultado extends Component {
     render() {
@@ -23,7 +24,7 @@ export class Resultado extends Component {
         }
 
         return (
-            <View>
+            <View style={estilo.container}>
                 <Text>Seu IMC é: {imc}</Text>
                 <Text>
                     {situacao}
